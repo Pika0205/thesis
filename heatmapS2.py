@@ -63,14 +63,14 @@ while  i < 6:
 
     f, ax = plt.subplots(figsize=(16, 8))
     #cmap = sns.cm.rocket  
-    cmap = sns.cm.rocket_r#colorbar颜色反转
+    cmap = sns.cm.rocket_r#colorbar颜色反轉
     #camp = ""YlGnBu_r""
     #plt.figure(figsize = (10,16))
 
 
 
-    ax = sns.heatmap(pd_data, annot=False, ax=ax, fmt='.3f', cmap=cmap, annot_kws={"size":20}, xticklabels = 2) #画heatmap，具体参数可以查文档
-    #ax = sns.heatmap(pd_data, annot=False, ax=ax, fmt='.2f', cmap=cmap, annot_kws={"size":20}, yticklabels = 1, vmin=1500, vmax=12000) #画heatmap，具体参数可以查文档
+    ax = sns.heatmap(pd_data, annot=False, ax=ax, fmt='.3f', cmap=cmap, annot_kws={"size":20}, xticklabels = 2) #畫heatmap
+    #ax = sns.heatmap(pd_data, annot=False, ax=ax, fmt='.2f', cmap=cmap, annot_kws={"size":20}, yticklabels = 1, vmin=1500, vmax=12000) #畫heatmap
 
     #字體大小在“annot_kws”中设置 . False不顯示數值於圖上
     #annot 為要不要在圖上顯示每一個的數值
@@ -88,22 +88,22 @@ while  i < 6:
 
     plt.xticks(rotation = 30)
     plt.yticks(rotation = 0)
-    plt.xlabel("TO1 (ms)",fontsize=17.5, color='k') #x轴label的文本和字体大小
-    #plt.ylabel("time         \nout 2          \n(ms)         ",fontsize=17.5, color='k', rotation = 0) #y轴label的文本和字体大小
-    #plt.ylabel("TO1          \n(ms)         ",fontsize=17.5, color='k', rotation = 0) #y轴label的文本和字体大小
-    plt.ylabel("TO2          \n(ms)          ",fontsize=17.5, color='k', rotation = 0) #y轴label的文本和字体大小
+    plt.xlabel("TO1 (ms)",fontsize=17.5, color='k') #x軸label的文字和字體大小
+    #plt.ylabel("time         \nout 2          \n(ms)         ",fontsize=17.5, color='k', rotation = 0) #y軸label的文字和字體大小
+    #plt.ylabel("TO1          \n(ms)         ",fontsize=17.5, color='k', rotation = 0) #y軸label的文字和字體大小
+    plt.ylabel("TO2          \n(ms)          ",fontsize=17.5, color='k', rotation = 0) #y軸label的文字和字體大小
 
-    plt.xticks(fontsize=15) #x轴刻度的字体大小（文本包含在pd_data中了）
-    plt.yticks(fontsize=15) #y轴刻度的字体大小（文本包含在pd_data中了）
+    plt.xticks(fontsize=15) #x軸刻度的字體大小（文字包含在pd_data中了）
+    plt.yticks(fontsize=15) #y軸刻度的字體大小（文字包含在pd_data中了）
 
 
 
-    #设置colorbar的刻度字体大小
+    #設置colorbar的刻度字體大小
     #cax = plt.gcf().axes[-1] 
     #cax.tick_params(labelsize=20)
 
 
-    #设置colorbar的label文本和字体大小
+    #设置colorbar的label文字和字體大小
     #cbar = ax.collections[0].colorbar
     #cbar.set_label("MB / s",fontdict=font)
     #cbar.set_label("ms",fontdict=font)
